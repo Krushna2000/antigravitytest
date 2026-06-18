@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani Weds Vaishnav — A Celebration of Love</title>
+    <meta name="description" content="Join us in celebrating the wedding of Shivani and Vaishnav. An occasion filled with love, joy and togetherness.">
+    <meta property="og:title" content="Shivani Weds Vaishnav — Wedding Invitation">
+    <meta property="og:description" content="You are cordially invited to the wedding celebration of Shivani & Vaishnav.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Great+Vibes&family=Outfit:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="mandala-spinner"></div>
+            <p class="preloader-text">Shivani <span>&</span> Vaishnav</p>
+        </div>
+    </div>
+
+    <button id="music-toggle" class="music-btn" aria-label="Toggle music">
+        <svg id="music-icon-on" class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <svg id="music-icon-off" class="music-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+            <line x1="1" y1="1" x2="23" y2="23" stroke-width="2.5"/>
+        </svg>
+    </button>
+
+    <audio id="wedding-music" loop preload="auto" playsinline>
+        <source src="https://cdn.pixabay.com/audio/2024/11/28/audio_3a605bc72c.mp3" type="audio/mpeg">
+    </audio>
+
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">S <span class="nav-ampersand">&</span> V</a>
+            <button id="nav-hamburger" class="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#couple">Couple</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#blessings">Blessings</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-ornament top-ornament">✦ ✦ ✦</div>
+            <p class="hero-subtitle">Wedding Invitation</p>
+            <h1 class="hero-title">
+                <span class="hero-name">Shivani</span>
+                <span class="hero-ampersand">&</span>
+                <span class="hero-name">Vaishnav</span>
+            </h1>
+            <div class="hero-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon">❧</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="hero-date">Saturday, 27th June 2026</p>
+            <p class="hero-venue-text">Wedding Reception · 6:00 PM – 10:00 PM</p>
+
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <a href="#couple" class="hero-scroll-btn">
+                <span>Scroll Down</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+            </a>
+            <div class="hero-ornament bottom-ornament">✦ ✦ ✦</div>
+        </div>
+    </section>
+
+    <section id="couple" class="couple-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Together Forever</span>
+                <h2 class="section-title">The Couple</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-mandala">❋</span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+
+            <div class="couple-grid">
+                <div class="couple-card groom-card" data-animate="slide-right">
+                    <div class="couple-img-wrapper">
+                        <div class="couple-img-frame">
+                            <img src="images/groom.jpg" alt="Vaishnav Wagh" class="couple-photo">
+                        </div>
+                        <div class="couple-img-ring"></div>
+                    </div>
+                    <h3 class="couple-name">Vaishnav Wagh</h3>
+                    <p class="couple-relation">Grandson of Late Smt. Lakshmibai &<br>Late Shri Tukaram Gabaji Wagh</p>
+                    <p class="couple-desc">Younger son of Smt. Lata and Shri Chandrakant Tukaram Wagh, Nashik. A kind soul whose warmth and devotion inspire everyone around him.</p>
+                </div>
+
+                <div class="couple-heart-center" data-animate="scale-in">
+                    <div class="heart-container">
+                        <svg class="heart-svg" viewBox="0 0 100 100">
+                            <path d="M50 88 C25 65 5 50 5 30 C5 15 15 5 30 5 C40 5 48 12 50 18 C52 12 60 5 70 5 C85 5 95 15 95 30 C95 50 75 65 50 88Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="couple-card bride-card" data-animate="slide-left">
+                    <div class="couple-img-wrapper">
+                        <div class="couple-img-frame">
+                            <img src="images/bride.jpg" alt="Shivani Shirsath" class="couple-photo">
+                        </div>
+                        <div class="couple-img-ring"></div>
+                    </div>
+                    <h3 class="couple-name">Shivani Shirsath</h3>
+                    <p class="couple-relation">Granddaughter of Smt. Tarabai Madhavrao Shirsath</p>
+                    <p class="couple-desc">Eldest daughter of Smt. Lakshmi and Shri Vijay Madhavrao Shirsath. A graceful soul whose kindness and radiant spirit light up every gathering.</p>
+                </div>
+            </div>
+
+            <div class="couple-quote" data-animate="fade-up">
+                <blockquote>
+                    "Two souls with but a single thought, two hearts that beat as one."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Save The Date</span>
+                <h2 class="section-title">Wedding Events</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-mandala">❋</span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+
+            <div class="events-timeline">
+                <div class="event-card" data-animate="fade-up">
+                    <div class="event-img-container">
+                        <img src="images/haldi.png" alt="Haldi Ceremony" loading="lazy">
+                        <div class="event-date-badge">
+                            <span class="badge-day">26</span>
+                            <span class="badge-month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-name">Haldi Ceremony</h3>
+                        <div class="event-info-row">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Friday, 26th June 2026 · 6:00 PM</span>
+                        </div>
+                        <div class="event-info-row">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Gupta Garden, Beyond Someshwar Temple, Gangapur Road, Nashik</span>
+                        </div>
+                        <p class="event-desc">A sacred evening ritual where turmeric paste is lovingly applied to the bride and groom, invoking blessings of prosperity and happiness.</p>
+                    </div>
+                </div>
+
+                <div class="event-card featured-event" data-animate="fade-up">
+                    <div class="event-img-container">
+                        <img src="images/venue.png" alt="Wedding Reception" loading="lazy">
+                        <div class="event-date-badge featured-badge">
+                            <span class="badge-day">27</span>
+                            <span class="badge-month">Jun</span>
+                        </div>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="event-name">Wedding Reception</h3>
+                        <div class="event-info-row">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span>Saturday, 27th June 2026 · 6:00 PM – 10:00 PM</span>
+                        </div>
+                        <div class="event-info-row">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Gupta Garden, Beyond Someshwar Temple, Gangapur Road, Nashik</span>
+                        </div>
+                        <p class="event-desc">The grand celebration of the union of Shivani and Vaishnav. Join us for an evening of joy, togetherness, and heartfelt blessings as we celebrate their new journey together.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="venue-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Find Us Here</span>
+                <h2 class="section-title">Venue Location</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-mandala">❛</span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+
+            <div class="venue-content" data-animate="fade-up">
+                <div class="venue-info-card">
+                    <div class="venue-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="venue-name">Gupta Garden</h3>
+                    <p class="venue-address">Beyond Someshwar Temple,<br>Gangapur Road, Nashik</p>
+                    <div class="venue-events-list">
+                        <div class="venue-event-chip">
+                            <span class="chip-dot haldi-dot"></span>
+                            Haldi — Fri, 26 Jun · 6:00 PM
+                        </div>
+                        <div class="venue-event-chip">
+                            <span class="chip-dot reception-dot"></span>
+                            Reception — Sat, 27 Jun · 6:00–10:00 PM
+                        </div>
+                    </div>
+                    <a href="https://maps.app.goo.gl/aDxXrtHjGTLaX7gK8" target="_blank" rel="noopener noreferrer" class="venue-directions-btn" id="venue-directions-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                        Get Directions on Google Maps
+                    </a>
+                </div>
+                <div class="venue-map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.5!2d73.7678!3d20.0234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDAxJzI0LjQiTiA3M8KwNDYnMDQuMSJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Gupta Garden, Gangapur Road, Nashik">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/aDxXrtHjGTLaX7gK8" target="_blank" rel="noopener noreferrer" class="map-overlay-link">
+                        <span>Open in Google Maps ↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blessings" class="blessings-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Share Your Love</span>
+                <h2 class="section-title">Blessings &amp; Wishes</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-mandala">❋</span>
+                    <span class="divider-line"></span>
+                </div>
+                <p class="section-subtitle">We would love to hear your heartfelt wishes and blessings for our new journey together.</p>
+            </div>
+
+            <div class="blessings-form-wrapper" data-animate="fade-up">
+                <form id="blessings-form" class="blessings-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="blessing-name">Your Name</label>
+                            <input type="text" id="blessing-name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="blessing-relation">Relation</label>
+                            <select id="blessing-relation" name="relation" required>
+                                <option value="" disabled selected>Select relation</option>
+                                <optgroup label="Side">
+                                    <option value="Groom's Side">Groom's Side (Vaishnav)</option>
+                                    <option value="Bride's Side">Bride's Side (Shivani)</option>
+                                </optgroup>
+                                <optgroup label="Relation">
+                                    <option value="Family">Family</option>
+                                    <option value="Friend">Friend</option>
+                                    <option value="Colleague">Colleague</option>
+                                    <option value="Neighbour">Neighbour</option>
+                                    <option value="Well-wisher">Well-wisher</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="blessing-message">Your Blessing / Wish</label>
+                        <textarea id="blessing-message" name="message" rows="4" placeholder="Write your heartfelt blessing for the couple..." required></textarea>
+                    </div>
+                    <button type="submit" id="blessing-submit" class="btn-submit">
+                        <span class="btn-text">Send Blessings</span>
+                        <span class="btn-icon">🙏</span>
+                        <span class="btn-loader hidden">
+                            <span class="loader-dot"></span>
+                            <span class="loader-dot"></span>
+                            <span class="loader-dot"></span>
+                        </span>
+                    </button>
+                </form>
+
+                <div id="form-toast" class="form-toast hidden">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                    <span>Your blessings have been shared! 🎉</span>
+                </div>
+            </div>
+
+            <div class="blessings-display">
+                <h3 class="blessings-display-title">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    Blessings from Loved Ones
+                    <span class="blessings-count" id="blessings-count">(0)</span>
+                </h3>
+                <div class="blessings-grid" id="blessings-grid">
+                    </div>
+                <div class="blessings-empty" id="blessings-empty">
+                    <div class="empty-icon">🕊️</div>
+                    <p>Be the first to bless the couple!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Memories</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-mandala">❛</span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-reel" data-animate="fade-up">
+                    <div class="reel-embed-wrapper">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DW1mVxVjFS8/?igsh=MWFmNnNyZmZscWJmZg==" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:12px; box-shadow:none; margin:0; max-width:100%; min-width:100%; padding:0; width:100%;">
+                        </blockquote>
+                    </div>
+                    <div class="reel-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <span>Watch Our Reel</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item gallery-item-large" data-animate="fade-up">
+                    <img src="images/couple-together.jpg" alt="Shivani and Vaishnav together" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Together Forever</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up">
+                    <img src="images/ring-ceremony.jpg" alt="Ring ceremony" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Ring Ceremony</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up">
+                    <img src="images/couple-portrait.jpg" alt="Couple portrait" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Portrait</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-large" data-animate="fade-up">
+                    <img src="images/stage-entry.jpg" alt="Grand stage entry" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Grand Entry</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up">
+                    <img src="images/couple-night.jpg" alt="Couple under the stars" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Under the Stars</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up">
+                    <img src="images/bride.jpg" alt="Shivani" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">The Bride</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up">
+                    <img src="images/groom.jpg" alt="Vaishnav" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">The Groom</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-ornament">
+            <span class="divider-line"></span>
+            <span class="divider-icon">❧</span>
+            <span class="divider-line"></span>
+        </div>
+        <div class="footer-content">
+            <h2 class="footer-names">Shivani <span>&</span> Vaishnav</h2>
+            <p class="footer-date">27 · 06 · 2026</p>
+            <p class="footer-tagline">"And they lived happily ever after…"</p>
+            <div class="footer-hearts">
+                <span>❤</span><span>❤</span><span>❤</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox hidden">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="Gallery image">
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
