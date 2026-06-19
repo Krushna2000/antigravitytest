@@ -142,12 +142,12 @@ function initBlessingsForm() {
 
     function timeAgo(ts) {
         const s = Math.floor((Date.now() - new Date(ts)) / 1000);
-        if (s < 5) return 'Just now';
-        if (s < 60) return s + 's ago';
-        const m = Math.floor(s / 60); if (m < 60) return m + 'm ago';
-        const h = Math.floor(m / 60); if (h < 24) return h + 'h ago';
-        const d = Math.floor(h / 24); if (d < 30) return d + 'd ago';
-        return Math.floor(d / 30) + 'mo ago';
+        if (s < 5) return 'आत्ताच';
+        if (s < 60) return s + ' सेकंदांपूर्वी';
+        const m = Math.floor(s / 60); if (m < 60) return m + ' मिनिटांपूर्वी';
+        const h = Math.floor(m / 60); if (h < 24) return h + ' तासांपूर्वी';
+        const d = Math.floor(h / 24); if (d < 30) return d + ' दिवसांपूर्वी';
+        return Math.floor(d / 30) + ' महिन्यांपूर्वी';
     }
 
     function render() {
